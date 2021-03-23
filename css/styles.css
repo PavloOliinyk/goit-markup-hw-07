@@ -318,19 +318,19 @@ img {
 
 /* +++++++ HEADER +++++++ */
 
-.header {
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 
-.header-nav,
-.header-nav-menu,
+.page-header__nav,
+.page-header__menu,
 .header-auth,
-.header .container {
+.page-header__container {
   display: flex;
   align-items: center;
 }
 
-.header-nav .logo {
+.page-header__nav .logo {
   margin-right: 93px;
 }
 
@@ -342,7 +342,7 @@ img {
   padding-bottom: 32px;
 }
 
-.header-nav .header-item:not(:last-child) {
+.page-header__nav .header-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -422,13 +422,13 @@ img {
   background-color: #2f303a;
 }
 
-.hero .container {
+.hero__container {
   padding: 200px 252px;
 
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -574,12 +574,12 @@ img {
   background-color: #f5f4fa;
 }
 
-.team-list {
+.members-list {
   display: flex;
   margin-left: -30px;
 }
 
-.team-list-item {
+.members-list__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 
@@ -589,7 +589,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list-title {
+.members-list__title {
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -599,7 +599,7 @@ img {
   color: var(--secondaryTextColor);
 }
 
-.team-list-desc {
+.members-list__desc {
   margin-bottom: 16px;
 
   font-weight: 400;
@@ -609,20 +609,17 @@ img {
   color: var(--primaryTextColor);
 }
 
-.team-list-heading {
+.members-list__meta {
   padding: 30px 32px;
 }
 
-.icon-list-messenger {
+.messenger-list {
   display: flex;
+  justify-content: space-between;
 }
 
-.icon-app:not(:last-child) {
-  margin-right: 10px;
-}
-
-.icon-app-messenger {
-  display: inline-flex;
+.messenger-list__link {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
@@ -635,14 +632,18 @@ img {
   border-radius: 50%;
 }
 
-.team-list-heading .icon-app-messenger:hover,
-.team-list-heading .icon-app-messenger:focus {
+.members-list__meta .messenger-list__link:hover,
+.members-list__meta .messenger-list__link:focus {
   background-color: var(--activeLinkColor);
   color: var(--whiteTextColor);
 }
 
-.icon-app .icon-messenger {
+.messenger-list__item .messenger-list__icon {
   fill: currentColor;
+}
+
+.messenger-list__item--footer:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* +++++++ TEAM END +++++++ */
@@ -874,14 +875,14 @@ abbr[title='label tag'] {
   margin-right: 93px;
 }
 
-.footer-join-links .icon-app-messenger {
+.footer-join-links .messenger-list__link {
   color: #ffffff;
 
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-join-links .icon-app-messenger:hover,
-.footer-join-links .icon-app-messenger:focus {
+.footer-join-links .messenger-list__link:hover,
+.footer-join-links .messenger-list__link:focus {
   background-color: var(--activeLinkColor);
 }
 
