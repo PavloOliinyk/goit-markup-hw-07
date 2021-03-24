@@ -21,36 +21,44 @@
   <body>
     <header class="page-header">
       <div class="container page-header__container">
-        <nav class="page-header__nav">
-          <a class="logo link" href="./index.html" lang="en">
-            <span class="logo-part">Web</span>Studio
+        <nav class="site-nav">
+          <a class="link logo site-nav__logo" href="./index.html" lang="en">
+            <span class="logo--colored">Web</span>Studio
           </a>
-          <ul class="page-header__menu list">
-            <li class="header-item">
-              <a class="header-link link" href="./index.html">Студия</a>
+          <ul class="list site-nav__list">
+            <li class="site-nav__item site-nav__item--mr">
+              <a class="link site-nav__link" href="./index.html">Студия</a>
             </li>
-            <li class="header-item">
-              <a class="header-link link active" href="./portfolio.html"
-                >Портфолио</a
-              >
+            <li class="site-nav__item site-nav__item--mr">
+              <a
+                class="link site-nav__link site-nav__link--focused"
+                href="./portfolio.html"
+                >Портфолио
+              </a>
             </li>
-            <li class="header-item">
-              <a class="header-link link" href="">Контакты</a>
+            <li class="site-nav__item">
+              <a class="link site-nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header-auth list">
-          <li class="header-item">
-            <a class="header-link link" href="mailto:info@example.com">
-              <svg class="header-icon" width="16" height="12">
+        <ul class="list site-auth__list">
+          <li class="site-nav__item">
+            <a
+              class="link site-nav__link site-auth__link"
+              href="mailto:info@example.com"
+            >
+              <svg class="site-auth__icon" width="16" height="12">
                 <use href="./images/sprite.svg#envelope"></use>
               </svg>
               info@example.com</a
             >
           </li>
-          <li class="header-item">
-            <a class="header-link link" href="tel:+380961111111">
-              <svg class="header-icon" width="10" height="16">
+          <li class="site-nav__item site-nav__item--ml">
+            <a
+              class="link site-nav__link site-auth__link"
+              href="tel:+380961111111"
+            >
+              <svg class="site-auth__icon" width="10" height="16">
                 <use href="./images/sprite.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -69,21 +77,31 @@
         <h2 class="suptitle visually-hidden">Проекты работ</h2>
 
         <div class="container">
-          <ul class="projects list">
-            <li class="projects-btn">
-              <button class="btn" type="button">Все</button>
+          <ul class="filters-btn__list list">
+            <li class="filters-btn__item">
+              <button class="button filters-btn__button" type="button">
+                Все
+              </button>
             </li>
-            <li class="projects-btn">
-              <button class="btn" type="button">Веб-сайты</button>
+            <li class="filters-btn__item">
+              <button class="button filters-btn__button" type="button">
+                Веб-сайты
+              </button>
             </li>
-            <li class="projects-btn">
-              <button class="btn" type="button">Приложения</button>
+            <li class="filters-btn__item">
+              <button class="button filters-btn__button" type="button">
+                Приложения
+              </button>
             </li>
-            <li class="projects-btn">
-              <button class="btn" type="button">Дизайн</button>
+            <li class="filters-btn__item">
+              <button class="button filters-btn__button" type="button">
+                Дизайн
+              </button>
             </li>
-            <li class="projects-btn">
-              <button class="btn" type="button">Маркетинг</button>
+            <li class="filters-btn__item">
+              <button class="button filters-btn__button" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
@@ -310,10 +328,14 @@
     </main>
 
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <div class="footer-address">
-          <a class="logo bottom link" href="./index.html" lang="en">
-            <span class="logo-part">Web</span>Studio
+          <a
+            class="link logo footer-address__logo"
+            href="./index.html"
+            lang="en"
+          >
+            <span class="logo--colored">Web</span>Studio
           </a>
           <address class="address">
             <ul class="address-list list">
@@ -341,31 +363,31 @@
         </div>
         <div class="footer-join-links">
           <p class="footer-links-title subtitle">Присоединяйтесь</p>
-          <ul class="icon-list-messenger list">
-            <li class="icon-app">
-              <a class="icon-app-messenger link" href="">
-                <svg class="icon-messenger" width="20" height="20">
+          <ul class="messenger-list list">
+            <li class="messenger-list__item messenger-list__item--footer">
+              <a class="messenger-list__link link" href="">
+                <svg class="messenger-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-app">
-              <a class="icon-app-messenger link" href="">
-                <svg class="icon-messenger" width="20" height="20">
+            <li class="messenger-list__item messenger-list__item--footer">
+              <a class="messenger-list__link link" href="">
+                <svg class="messenger-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-app">
-              <a class="icon-app-messenger link" href="">
-                <svg class="icon-messenger" width="20" height="20">
+            <li class="messenger-list__item messenger-list__item--footer">
+              <a class="messenger-list__link link" href="">
+                <svg class="messenger-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-app">
-              <a class="icon-app-messenger link" href="">
-                <svg class="icon-messenger" width="20" height="20">
+            <li class="messenger-list__item messenger-list__item--footer">
+              <a class="messenger-list__link link" href="">
+                <svg class="messenger-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
               </a>
@@ -373,30 +395,22 @@
           </ul>
         </div>
 
-        <div class="signup">
-          <form name="signup-form">
-            <label class="signup-title subtitle" for="email">
-              Подпишитесь на рассылку
-            </label>
-            <input
-              class="signup-input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-            />
-            <button
-              class="signup-btn modal-open"
-              type="button"
-              data-modal-portfolio
-            >
-              Подписаться
-              <svg class="signup-icon" width="24" height="24">
-                <use href="./images/icons.svg#send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
+        <form name="signup-form">
+          <b class="subtitle signup-form__title"> Подпишитесь на рассылку </b>
+          <input
+            class="signup-form__input"
+            type="email"
+            name="email"
+            placeholder="E-mail"
+            autocomplete="off"
+          />
+          <button class="button signup-form__button" type="submit">
+            Подписаться
+            <svg class="signup-icon" width="24" height="24">
+              <use href="./images/icons.svg#send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
