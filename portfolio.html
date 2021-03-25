@@ -21,44 +21,44 @@
   <body>
     <header class="page-header">
       <div class="container page-header__container">
-        <nav class="site-nav">
-          <a class="link logo site-nav__logo" href="./index.html" lang="en">
+        <nav class="page-header__site-nav">
+          <a class="link logo page-header__logo" href="./index.html" lang="en">
             <span class="logo--colored">Web</span>Studio
           </a>
-          <ul class="list site-nav__list">
-            <li class="site-nav__item site-nav__item--mr">
-              <a class="link site-nav__link" href="./index.html">Студия</a>
+          <ul class="list page-header__list">
+            <li class="page-header__item page-header__item--left">
+              <a class="link page-header__link" href="./index.html">Студия </a>
             </li>
-            <li class="site-nav__item site-nav__item--mr">
+            <li class="page-header__item page-header__item--left">
               <a
-                class="link site-nav__link site-nav__link--focused"
+                class="link page-header__link page-header__link--active"
                 href="./portfolio.html"
                 >Портфолио
               </a>
             </li>
-            <li class="site-nav__item">
-              <a class="link site-nav__link" href="">Контакты</a>
+            <li class="page-header__item">
+              <a class="link page-header__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list site-auth__list">
-          <li class="site-nav__item">
+        <ul class="list page-header__list page-header__list--end">
+          <li class="page-header__item">
             <a
-              class="link site-nav__link site-auth__link"
+              class="link page-header__link page-header__link--auth"
               href="mailto:info@example.com"
             >
-              <svg class="site-auth__icon" width="16" height="12">
+              <svg class="page-header__icon" width="16" height="12">
                 <use href="./images/sprite.svg#envelope"></use>
               </svg>
               info@example.com</a
             >
           </li>
-          <li class="site-nav__item site-nav__item--ml">
+          <li class="page-header__item page-header__item--right">
             <a
-              class="link site-nav__link site-auth__link"
+              class="link page-header__link page-header__link--auth"
               href="tel:+380961111111"
             >
-              <svg class="site-auth__icon" width="10" height="16">
+              <svg class="page-header__icon" width="10" height="16">
                 <use href="./images/sprite.svg#smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -329,64 +329,73 @@
 
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer-address">
-          <a
-            class="link logo footer-address__logo"
-            href="./index.html"
-            lang="en"
-          >
+        <div class="footer__wrapper">
+          <a class="link logo footer__logo" href="./index.html" lang="en">
             <span class="logo--colored">Web</span>Studio
           </a>
-          <address class="address">
-            <ul class="address-list list">
-              <li class="address-list-item">
+          <address class="footer__address">
+            <ul class="list footer__list">
+              <li class="footer__item">
                 <a
-                  class="address-list-link-gmaps link"
+                  class="link footer__link footer__link--gmaps"
                   href="https://goo.gl/maps/zEipnjbdjEoZz8kJ8"
                   target="_blank"
                   rel="noopener noreferrer"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="address-list-item">
-                <a class="address-list-link link" href="mailto:info@example.com"
+              <li class="footer__item">
+                <a class="link footer__link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="address-list-item">
-                <a class="address-list-link link" href="tel:+380961111111"
+              <li class="footer__item footer__item--last">
+                <a class="link footer__link" href="tel:+380961111111"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-join-links">
-          <p class="footer-links-title subtitle">Присоединяйтесь</p>
-          <ul class="messenger-list list">
+
+        <div class="messenger-list__wrapper">
+          <p class="subtitle footer__subtitle">Присоединяйтесь</p>
+          <ul class="list messenger-list">
             <li class="messenger-list__item messenger-list__item--footer">
-              <a class="messenger-list__link link" href="">
+              <a
+                class="link messenger-list__link messenger-list__link--footer"
+                href=""
+              >
                 <svg class="messenger-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="messenger-list__item messenger-list__item--footer">
-              <a class="messenger-list__link link" href="">
+              <a
+                class="link messenger-list__link messenger-list__link--footer"
+                href=""
+              >
                 <svg class="messenger-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="messenger-list__item messenger-list__item--footer">
-              <a class="messenger-list__link link" href="">
+              <a
+                class="link messenger-list__link messenger-list__link--footer"
+                href=""
+              >
                 <svg class="messenger-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="messenger-list__item messenger-list__item--footer">
-              <a class="messenger-list__link link" href="">
+            <li class="messenger-list__item">
+              <a
+                class="link messenger-list__link messenger-list__link--footer"
+                href=""
+              >
                 <svg class="messenger-list__icon" width="20" height="20">
                   <use href="./images/sprite.svg#linkedin"></use>
                 </svg>
@@ -395,18 +404,20 @@
           </ul>
         </div>
 
-        <form name="signup-form">
-          <b class="subtitle signup-form__title"> Подпишитесь на рассылку </b>
+        <form name="signup-form" class="form-signup">
+          <b class="subtitle footer__subtitle form-signup__subtitle">
+            Подпишитесь на рассылку
+          </b>
           <input
-            class="signup-form__input"
+            class="form-signup__input"
             type="email"
             name="email"
             placeholder="E-mail"
             autocomplete="off"
           />
-          <button class="button signup-form__button" type="submit">
+          <button class="button form-signup__button" type="submit">
             Подписаться
-            <svg class="signup-icon" width="24" height="24">
+            <svg class="form-signup__icon" width="24" height="24">
               <use href="./images/icons.svg#send"></use>
             </svg>
           </button>
