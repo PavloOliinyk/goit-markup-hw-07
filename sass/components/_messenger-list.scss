@@ -1,0 +1,21 @@
+.messenger-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.messenger-list__link {
+  @include centeredFlex(flex);
+  justify-content: center;
+
+  color: #afb1b8;
+
+  transition: var(--transitionBg), var(--transitionColor);
+
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: var(--activeLinkColor);
+    color: var(--whiteTextColor);
+  }
+}
