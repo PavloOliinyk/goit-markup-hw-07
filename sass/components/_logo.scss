@@ -1,3 +1,15 @@
+.logo {
+  font-family: var(--secondaryFont);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+
+  &--colored {
+    color: var(--activeLinkColor);
+  }
+}
+
 .page-header__logo {
   margin-right: 93px;
 }
@@ -7,8 +19,4 @@
   margin-bottom: 20px;
 
   color: var(--whiteTextColor);
-}
-
-.logo--colored {
-  color: var(--activeLinkColor);
 }

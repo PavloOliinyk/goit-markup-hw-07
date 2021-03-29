@@ -1,21 +1,36 @@
 .messenger-list {
   display: flex;
   justify-content: space-between;
-}
 
-.messenger-list__link {
-  @include centeredFlex(flex);
-  justify-content: center;
+  &__item--footer {
+    margin-right: 10px;
+  }
 
-  color: #afb1b8;
+  &__link {
+    @include centeredFlex(flex);
+    justify-content: center;
 
-  transition: var(--transitionBg), var(--transitionColor);
+    color: #afb1b8;
 
-  border-radius: 50%;
+    transition: var(--transitionBg), var(--transitionColor);
 
-  &:hover,
-  &:focus {
-    background-color: var(--activeLinkColor);
-    color: var(--whiteTextColor);
+    border-radius: 50%;
+
+    &--footer {
+      color: #ffffff;
+
+      background-color: rgba(255, 255, 255, 0.1);
+
+      &:hover,
+      &:focus {
+        background-color: var(--activeLinkColor);
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--activeLinkColor);
+      color: var(--whiteTextColor);
+    }
   }
 }

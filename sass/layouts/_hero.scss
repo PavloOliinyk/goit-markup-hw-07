@@ -1,6 +1,12 @@
 .hero {
   background-color: #2f303a;
 
+  &__container {
+    padding: 200px 252px;
+
+    text-align: center;
+  }
+
   &__overlay {
     max-width: 1600px;
     height: 600px;
@@ -29,15 +35,15 @@
     text-transform: uppercase;
     color: var(--whiteTextColor);
   }
-}
 
-.hero__button {
-  padding: 10px 32px;
+  &__button {
+    padding: 10px 32px;
 
-  transition: var(--transitionBg);
+    transition: var(--transitionBg);
 
-  &:hover,
-  &:focus {
-    background-color: #188ce8;
+    &:hover,
+    &:focus {
+      background-color: #188ce8;
+    }
   }
 }
