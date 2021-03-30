@@ -1,9 +1,9 @@
+@import './base/common';
+@import './base/container';
+
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './utils/mixins';
-
-@import './base/common';
-@import './base/container';
 
 @import './components/section';
 @import './components/logo';
@@ -14,7 +14,7 @@
 @import './components/subtitle';
 @import './components/button';
 
-@import './layouts/page-header';
+@import './layouts/header';
 @import './layouts/hero';
 @import './layouts/features';
 @import './layouts/production';
