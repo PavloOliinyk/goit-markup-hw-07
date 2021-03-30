@@ -9,6 +9,13 @@
   --transitionBg: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+body {
+  font-family: var(--primaryFont);
+  letter-spacing: 0.03em;
+  color: var(--primaryTextColor);
+  background-color: var(--whiteTextColor);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -21,13 +28,6 @@
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-body {
-  font-family: var(--primaryFont);
-  letter-spacing: 0.03em;
-  color: var(--primaryTextColor);
-  background-color: var(--whiteTextColor);
 }
 
 h1,
@@ -54,25 +54,6 @@ img {
 
 .icon {
   fill: currentColor;
-}
-
-.subtitle {
-  font-weight: 700;
-  color: var(--secondaryTextColor);
-}
-
-.button {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--whiteTextColor);
-  background-color: var(--activeLinkColor);
-  border-radius: 4px;
-  border-style: none;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
 }
 
 .container {
@@ -158,6 +139,25 @@ img {
 .messenger-list__link:hover, .messenger-list__link:focus {
   background-color: var(--activeLinkColor);
   color: var(--whiteTextColor);
+}
+
+.subtitle {
+  font-weight: 700;
+  color: var(--secondaryTextColor);
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--whiteTextColor);
+  background-color: var(--activeLinkColor);
+  border-radius: 4px;
+  border-style: none;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .page-header {
